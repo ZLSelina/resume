@@ -14,6 +14,7 @@ body{
 //page1
 .page1{
   position: relative;
+  opacity: 0;
   .bg{
     position: absolute;
     top:0;
@@ -121,10 +122,17 @@ body{
     text-align: center;
     color: #cfcfd0;
   }
+  &#active1{
+    opacity: 1;
+  }
 }
 //page2
 .page2{
   position: relative;
+  opacity: 0;
+  &#active2{
+    opacity: 1;
+  }
   .bg{
     position: absolute;
     top:0;
@@ -261,6 +269,10 @@ body{
 //page3
 .page3{
   position: relative;
+  opacity: 0;
+  &#active3{
+    opacity: 1;
+  }
   .bg{
     position: absolute;
     top:0;
@@ -424,6 +436,10 @@ body{
 //page4
 .page4{
   position: relative;
+  opacity: 0;
+  &#active4{
+    opacity: 1;
+  }
   width: 100%;
   height: 100%;
   .bg{
@@ -615,6 +631,10 @@ body{
 //page5
 .page5{
   position: relative;
+  opacity: 0;
+  &#active5{
+    opacity: 1;
+  }
   width: 100%;
   height: 100%;
   .bg{
@@ -801,15 +821,15 @@ body{
   background-size: 100%;
   z-index: 111111;
   &.musicMove{
-    animation: musicMove 1s linear 1s infinite;
+    animation: rotate360 2s linear 1s infinite;
     transition: 1s 1s;
   }
 }
-/****************动画**************/
 
+/****************动画**************/
 @keyframes rotate360 {
  0% {
-   transoform:rotate(0deg);
+   transform:rotate(0deg);
  }
   100% {
   transform:rotate(360deg);
@@ -1027,18 +1047,3 @@ body{
     }
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
