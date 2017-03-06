@@ -263,18 +263,21 @@
                     curSliderIndex = mySwiper.activeIndex;
             [].forEach.call(allSliders, function (item, index) {
                 item.id = '';
-                if (curSliderIndex === index) {
-                    if (index === allSliders.length - 1) {//最后一张
+                if (curSliderIndex == index) {
+                    if (index == allSliders.length - 1) {//最后一张
                         allSliders[curSliderIndex].id = "active1";
-                    } else if (index === 0) {//第一张
-                        allSliders[curSliderIndex].id = "active" + (curSliderIndex + 2);
+                    } else if (index == 0) {//第一张
+                        allSliders[curSliderIndex].id = "active" + (allSliders.length - 2);
                     } else {
                         allSliders[curSliderIndex].id = "active" + curSliderIndex;
                     }
+
                 }
             });
         }
     });
+
+
 </script>
 <script src="js/index.js"></script>
 </body>
